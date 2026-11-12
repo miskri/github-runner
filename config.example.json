@@ -1,0 +1,25 @@
+{
+  "runner": {
+    "name": "mac-docker",
+    "labels": []
+  },
+  "tools": {
+    "apt": [
+      "python3",
+      "python3-pip",
+      "python3-venv",
+      "build-essential",
+      "unzip",
+      "zip",
+      "xz-utils",
+      "openssh-client"
+    ],
+    "run": []
+  },
+  "repositories": [
+    {
+      "name": "owner/name",
+      "token": "<pat_token>"
+    }
+  ]
+}

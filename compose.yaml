@@ -1,0 +1,10 @@
+services:
+  runner:
+    build: .
+    image: github-runner
+    container_name: github-runner
+    volumes:
+      - ./config.json:/etc/github-runner/config.json:ro
+    init: true
+    restart: unless-stopped
+    stop_grace_period: 1m
